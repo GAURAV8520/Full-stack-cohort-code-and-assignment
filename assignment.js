@@ -111,3 +111,5 @@ const ans1=arr1.filter((i)=>{
 })
 
 console.log(ans1);
+
+//1 january 2024
