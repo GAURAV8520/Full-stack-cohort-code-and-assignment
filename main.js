@@ -133,37 +133,168 @@
 // }
 // let value=sum1(4,7,displaydata);
 
-function calculate(a,b,type){
+// function calculate(a,b,type){
 
-    if(type=="sum"){
-        const result =sum(a,b);
-        return result;
-    }
-    if(type=="minus"){
-        const result =minus(a,b);
-        return result;
-    }
-}
-
-
-function sum(a,b){
-    return a+b;
-}
-function minus(a,b){
-    return a-b;
-}
+//     if(type=="sum"){
+//         const result =sum(a,b);
+//         return result;
+//     }
+//     if(type=="minus"){
+//         const result =minus(a,b);
+//         return result;
+//     }
+// }
 
 
-let ans3=calculate(45,10,"minus");
-console.log(ans3);
+// function sum(a,b){
+//     return a+b;
+// }
+// function minus(a,b){
+//     return a-b;
+// }
+
+
+// let ans3=calculate(45,10,"minus");
+// console.log(ans3);
 
 
 
 //set timeout function 
 
-function sakshi(){
-    console.log("sakshi hiii");
+// function sakshi(){
+//     console.log("sakshi hiii");
+// }
+
+// setTimeout(sakshi, 4*1000);
+// setInterval(sakshi,1*1000);
+
+
+
+//day 2 
+//string function 
+
+// let name1 ="gaurav deshmukh";
+
+// let p=name1.length;
+// console.log(p);
+
+// p=name1.indexOf("deshmukh");
+// console.log(p);
+
+
+// p=name1.lastIndexOf("rav");
+// console.log(p);
+
+
+// p=name1.slice(0,7);
+// console.log(p);
+
+// const val="Anushka bhadke";
+
+// let ans =val.substr(2,6);
+// let ans2 =val.slice(2,5);
+
+// console.log(ans);
+// console.log(ans2);
+
+// let ans3=0;
+// for (let i =0;i<100 ;i++){
+//     ans3+=i;
+// }
+// console.log(ans3);
+
+// function findsum(n){
+//     let a=0;
+
+//     for(let i =0;i<=n;i++){
+//         a+=i;
+//     }
+
+//     return a;
+// }
+
+// let an=findsum(2);
+// console.log(an);
+
+// //call back function 
+
+
+//     function square(n){
+//         return n*n;
+//     }
+//     function cube(n){
+//         return n*n *n;
+
+//     }
+//     function SquareandCube(a,b,fn,kn){
+      
+//         let c=fn(a);
+//         let d=kn(b);
+
+//         return c+d;
+//     }
+//     let y=SquareandCube(1,2,square,cube);
+//     console.log(y);
+
+    //simple function 
+
+// function squareAdd(a,b){
+//     let k=square(a);
+//     let c=square(b);
+
+//     return k+c;
+// }
+
+// let z=squareAdd(5,6);
+
+// console.log(z);
+
+//Anonymous function - function which does not have any name
+
+
+// function squareAdd(a,b,fn){
+//     console.log(fn);
+//     let k=fn(a);
+//     let c=fn(b);
+
+//     return k+c;
+// }
+
+// let z=squareAdd(5,6,function(n){
+//     return n*n;
+// });
+
+// console.log(z);
+
+
+// function findsum3(n){
+//     let ans=0;
+//     for(let i=0;i<n;i++){
+//         ans+=i;
+//     }
+
+//     return ans;
+// }
+
+// function find(){
+//     console.log(findsum3(100));
+// }
+
+// setTimeout(find,1000)
+// console.log("hi gaurav");
+
+
+const fs =require("fs");
+
+fs.readFile("a.txt","utf-8",function(err ,data ){
+    console.log(data);
+})
+
+console.log("hi everyoone")
+
+let a=0;
+for(let i=0;i<10000000000;i++){
+    a++;
 }
 
-setTimeout(sakshi, 4*1000);
-// setInterval(sakshi,1*1000);
+console.log("joooo")
